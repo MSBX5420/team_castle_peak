@@ -38,12 +38,13 @@
     - Paul fortunately is taking a sentiment analysis class at the moment. We will look to Paul for the bulk of the sentiment analysis as he is the most well versed.
     - Mico will be doing the word clouds
     - Alex will be performing word counts
-    - Maryann will be
+    - Maryann will be performing topic model analysis
 
 ### Glossary
 - **Amazon Web Services (AWS)** -  cloud based computing to run the programs and analyze the data
 - **Sentiment analysis** - analyze the positive versus negative words in the corpora
-- **Word cloud** - a novelty visual representation of text data, typically used to depict keyword metadata on websites, or to visualize free form text. 
+- **Word cloud** - a novelty visual representation of text data, typically used to depict keyword metadata on websites, or to visualize free form text
+- **Topic Modeling** - a type of statistical model for discovering the abstract "topics" that occur in a collection of documents
 
 ### Timeline
 - We plan to start analysis a week out to give George a week to clean the data, specifically plan to start after the 15th.
