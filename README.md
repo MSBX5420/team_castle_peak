@@ -14,3 +14,4 @@ Project Repository for MSBX5420 Team Castle Peak
   - All 5 members in attendance
 - Code to clean data complete 4/13 (ZZ)
   - Uploaded dataset and cleaning code to (PT)
+- Added first draft of sentiment analysis code (PT) 4/22 
