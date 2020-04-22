@@ -1,6 +1,8 @@
+###########################################################
 # Team Castle Peak
 # Data Cleaning Code
 # By: Zhe Zhao 4/13
+###########################################################
 
 # Install chrom package if not already
 # install.packages("chron")
@@ -11,7 +13,7 @@ library(R.utils)
 # Clean up existing environment
 rm(list = ls())
 
-# Set to local workin directory
+# Set to local working directory
 #setwd("C:\\Users\\zhe zhao\\Desktop\\MSBX5420")
 setwd("C:\\Users\\seeth\\OneDrive\\OD_Documents\\MBA\\SPRING_20\\MSBX5420 - Unstructured Data\\Project\\team_castle_peak")
 
