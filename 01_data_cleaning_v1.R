@@ -56,3 +56,6 @@ news$time<-chron(times=mytime)
 
 # Debug - check out cleaned data
 # head(news)
+
+# Write cleaned data to new csv
+write.csv(news, "news_cleaned.csv")
