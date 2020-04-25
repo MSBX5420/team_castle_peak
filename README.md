@@ -15,3 +15,9 @@ Project Repository for MSBX5420 Team Castle Peak
 - Code to clean data complete 4/13 (ZZ)
   - Uploaded dataset and cleaning code to (PT)
 - Added first draft of sentiment analysis code (PT) 4/22 
+- Attempted some stuff on AWS (PT) 4/24
+  - Uploaded data (csv files) to Dev EMR and S3 buckets
+    - /team_castle_peak directories on both
+  - Tried to start work on Jupyter Notebook with issues
+    - Created own cluster and s3 bucket w/ data
+    - Issues importing libraries to Jupyter notebook on that cluster and reading from bucket
