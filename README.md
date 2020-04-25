@@ -21,3 +21,7 @@ Project Repository for MSBX5420 Team Castle Peak
   - Tried to start work on Jupyter Notebook with issues
     - Created own cluster and s3 bucket w/ data
     - Issues importing libraries to Jupyter notebook on that cluster and reading from bucket
+- Create python notebook file for calculating positive/negative sentiment scores (PT) 4/25
+  - Uploaded to team dir on dev EMR
+  - TODO: something useful with those scores
+- Created V1 of SDD (PT) 4/25
