@@ -32,3 +32,7 @@ Project Repository for MSBX5420 Team Castle Peak
 - Updated new analysis with Python 4/26
 - Converted SDD to .md format (PT) 4/27
 - Add links to doc deliverables in readme (PT) 4/27
+- Perform analyses on sentiment scores (AG) 4/27
+- Run some file on the cluster to manipulate data in S3 bucket (ZZ) 4/27
+- Held check in meeting 4/27 @ 11:00 AM MST
+
