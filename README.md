@@ -8,6 +8,10 @@ Project Repository for MSBX5420 Team Castle Peak
 - Maryann P.
 - Alex G.
 
+## Documents
+- [Requirements Document](https://github.com/MSBX5420/team_castle_peak/blob/master/Requirements.md)
+- [Software Design Document V2](https://github.com/MSBX5420/team_castle_peak/blob/master/MSBX5420-SDD-V2.md)
+
 ### Record Keeping
 - Initial email to establish communication sent 4/7/20 @ 2:30 PM (PT)
 - Started project proposal 4/10 @ 1:30 PM
@@ -26,3 +30,5 @@ Project Repository for MSBX5420 Team Castle Peak
   - TODO: something useful with those scores
 - Created V1 of SDD (PT) 4/25
 - Updated new analysis with Python 4/26
+- Converted SDD to .md format (PT) 4/27
+- Add links to doc deliverables in readme (PT) 4/27
