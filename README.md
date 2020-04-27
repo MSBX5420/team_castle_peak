@@ -11,6 +11,7 @@ Project Repository for MSBX5420 Team Castle Peak
 ## Documents
 - [Requirements Document](https://github.com/MSBX5420/team_castle_peak/blob/master/Requirements.md)
 - [Software Design Document V2](https://github.com/MSBX5420/team_castle_peak/blob/master/MSBX5420-SDD-V2.md)
+- [Presentation Deck](https://docs.google.com/presentation/d/1WwStrpsOf7392VhusVur28uPIXCDzI58TW1lG70Ul6I/edit?usp=sharing)
 
 ### Record Keeping
 - Initial email to establish communication sent 4/7/20 @ 2:30 PM (PT)
@@ -35,4 +36,5 @@ Project Repository for MSBX5420 Team Castle Peak
 - Perform analyses on sentiment scores (AG) 4/27
 - Run some file on the cluster to manipulate data in S3 bucket (ZZ) 4/27
 - Held check in meeting 4/27 @ 11:00 AM MST
+- Add link to blank presentation (PT) 4/27
 
