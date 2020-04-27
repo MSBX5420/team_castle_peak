@@ -43,21 +43,21 @@ Tools
 ### Process
 
 1.	Data preprocessing
-	- a.	Using R, add additional information to the dataset for ease-of-use
-	- b.	Using R, remove junk characters and clean the data
+	-	Using R, add additional information to the dataset for ease-of-use
+	-	Using R, remove junk characters and clean the data
 2.	Analysis
-	- a.	Ingest the preprocessed data
-	- b.	Convert to parquet format
-	- c.	Write modular code segments to perform analysis on the data
+	- 	Ingest the preprocessed data
+	- 	Convert to parquet format
+	- 	Write modular code segments to perform analysis on the data
 		- i.	Sentiment analysis
 		- ii.	Word cloud
 		- iii.	Word counts
 		- iv.	Topic models
-	- d.	Unit test each code module
+	- 	Unit test each code module
 3.	Deployment
-	- a.	Convert code to Spark/deployable code
-	- b.	Upload code and data to respective AWS location
-	- c.	Run code on cluster
+	- 	Convert code to Spark/deployable code
+	- 	Upload code and data to respective AWS location
+	- 	Run code on cluster
 
 ### Risks
 - Have not used R with Spark, so learning curve there for integration
@@ -74,15 +74,11 @@ Tools
 
 ### Major Deadlines
 1. Requirement phase – 4/12
-
-	a. Requirements document deliverable
+	- Requirements document deliverable
 2. Design, Development, Test phase – 4/12
-
-	a. SDD deliverable
-	b. Code deliverable(s)
+	- SDD deliverable
+	- Code deliverable(s)
 3. Deployment – 4/28
-
-	a. Run code on cluster and get output
+	- Run code on cluster and get output
 4. Presentation – 4/28
-
-	a. Present findings to class 
+	- Present findings to class 
