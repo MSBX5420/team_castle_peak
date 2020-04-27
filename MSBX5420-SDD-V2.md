@@ -1,8 +1,8 @@
-#MSBX5420 Final Project Design Document
-#V2.0
-#4/25/20
+# MSBX5420 Final Project Design Document
+## V2.0
+## 4/25/20
 
-##Purpose
+## Purpose
 
 To create and deploy a series of applications utilizing several technologies utilized in the class over the course of the semester.
 Scope
@@ -26,8 +26,8 @@ Tools
 - Slack
 - PuTTY
 
-##Design Overview
-###Requirements
+## Design Overview
+### Requirements
 
 1.	The project shall be modular, with each piece of analysis in its own code file.
 2.	Data shall be stored on the S3 bucket for analysis
@@ -40,7 +40,7 @@ Tools
 
 
 
-###Process
+### Process
 
 1.	Data preprocessing
 	- a.	Using R, add additional information to the dataset for ease-of-use
@@ -59,12 +59,12 @@ Tools
 	- b.	Upload code and data to respective AWS location
 	- c.	Run code on cluster
 
-###Risks
+### Risks
 - Have not used R with Spark, so learning curve there for integration
 - Difficulties of performing more advanced analysis on Python and converting that to Spark
 - Communication difficulties in a remote working environment
 
-###Objectives
+### Objectives
 - Manage a project from start to finish using the Agile methodology
 - Create, test, and deploy a project on AWS using Spark and other languages
 - Learn to use Github for project management
@@ -72,7 +72,7 @@ Tools
 		- Visualize output
 - Present findings upon completion
 
-###Major Deadlines
+### Major Deadlines
 	1.	Requirement phase – 4/12
 		- a.	Requirements document deliverable
 	2.	Design, Development, Test phase – 4/12
