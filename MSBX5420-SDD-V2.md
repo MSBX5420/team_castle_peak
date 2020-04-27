@@ -73,12 +73,12 @@ Tools
 - Present findings upon completion
 
 ### Major Deadlines
-	1.	Requirement phase – 4/12
-		- a.	Requirements document deliverable
-	2.	Design, Development, Test phase – 4/12
-		- a.	SDD deliverable
-		- b.	Code deliverable(s)
-	3.	Deployment – 4/28
-		- a.	Run code on cluster and get output
-	4.	Presentation – 4/28
-		- a.	Present findings to class 
+1. Requirement phase – 4/12
+	a.	Requirements document deliverable
+2.	Design, Development, Test phase – 4/12
+	a.	SDD deliverable
+	b.	Code deliverable(s)
+3.	Deployment – 4/28
+	a.	Run code on cluster and get output
+4.	Presentation – 4/28
+	a.	Present findings to class 
