@@ -13,6 +13,11 @@ Project Repository for MSBX5420 Team Castle Peak
 - [Software Design Document V2](https://github.com/MSBX5420/team_castle_peak/blob/master/MSBX5420-SDD-V2.md)
 - [Presentation Deck (View Only)](https://docs.google.com/presentation/d/1WwStrpsOf7392VhusVur28uPIXCDzI58TW1lG70Ul6I/edit?usp=sharing)
 
+### Outstanding To Dos
+- Upload data/files to production cluster
+- Finish on-cluster python script to demo EMR <-> S3 communication
+- Put together presentation deck
+
 ### Record Keeping
 - Initial email to establish communication sent 4/7/20 @ 2:30 PM (PT)
 - Started project proposal 4/10 @ 1:30 PM
