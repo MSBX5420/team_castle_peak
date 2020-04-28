@@ -48,6 +48,7 @@ Tools
 2.	Analysis
 	- 	Ingest the preprocessed data
 	- 	Convert to parquet format
+		- Production notebook code here: http://127.0.0.1:9876/notebooks/team_castle_peak/Parquet_data_ingestion.ipynb
 	- 	Write modular code segments to perform analysis on the data
 		- i.	Sentiment analysis
 		- ii.	Word cloud
