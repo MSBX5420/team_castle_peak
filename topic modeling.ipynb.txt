@@ -1,0 +1,121 @@
+from pyspark.sql  import SparkSession
+spark = SparkSession.builder.getOrCreate()
+sc = spark.sparkContext
+
+sc.list_packages()
+
+sc.install_pypi_package("pyspark==2.3.2") 
+
+sc.install_pypi_package("tmtoolkit")
+
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+
+import csv
+import pandas as pd
+import numpy as np
+
+news = spark.read.parquet('s3://aws-emr-resources-788046738101-us-east-1/notebooks/e-228XWP1M3H3CJH36K2HJ87DMN/news.parquet')
+
+news.head()
+
+print(f'Total Columns: {len(news.dtypes)}')
+
+print(f'Total Rows: {news.count():,}')
+
+news.printSchema()
+
+import random
+random.seed(20202504)
+np.set_printoptions(precision=5)
+from tmtoolkit.corpus import Corpus
+
+import codecs
+import urllib 
+corpus = Corpus()
+TEXT_FIELD = 8
+
+text = news.select('text').collect()
+
+for i, line in enumerate(text):
+  corpus.add_doc(str(i+1), str(text[i]))
+
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.pyplot.hist(corpus.doc_lengths.values())
+
+%matplot plt
+
+#most articles are under 2,000 words
+
+from tmtoolkit.preprocess import TMPreproc
+
+preproc = TMPreproc(corpus)
+preproc.pos_tag()
+preproc.lemmatize()
+preproc.tokens_to_lowercase()
+preproc.remove_special_chars_in_tokens()
+preproc.add_stopwords(['http', 'nt'])
+
+preproc.vocabulary_size
+
+preproc_smaller = preproc.copy()
+preproc_smaller.filter_for_pos('N')
+preproc_smaller.clean_tokens(remove_numbers=True, remove_shorter_than=2)
+preproc_smaller.remove_common_tokens(df_threshold=0.8)
+preproc_smaller.remove_uncommon_tokens(df_threshold=0.0033)
+
+print(preproc.vocabulary_size)
+print(preproc_smaller.vocabulary_size)
+
+print(preproc.tokens['91'])
+print(preproc_smaller.tokens['91'])
+print(preproc.tokens['1'])
+print(preproc_smaller.tokens['1'])
+print(preproc.tokens['2000'])
+print(preproc_smaller.tokens['2000'])
+
+vocab_bg = np.array(preproc.vocabulary)
+vocab_sm = np.array(preproc_smaller.vocabulary)
+
+dtm_bg = preproc.dtm
+dtm_sm = preproc_smaller.dtm
+dtm_bg, dtm_sm
+
+sc.install_pypi_package("lda")
+
+import logging
+import warnings
+from tmtoolkit.topicmod.tm_lda import compute_models_parallel
+
+logger = logging.getLogger('lda')
+logger.addHandler(logging.NullHandler())
+logger.propagate = False
+warnings.filterwarnings('ignore')
+
+dtms = {
+    'bigger': dtm_bg,
+    'smaller': dtm_sm,
+}
+
+lda_params = {
+    'n_topics': 10,
+    'eta': .01,
+    'n_iter': 1000,
+    'random_state': 20202504
+}
+
+models = compute_models_parallel(dtms, constant_parameters=lda_params)
+
+from tmtoolkit.topicmod.model_io import print_ldamodel_topic_words
+model_bg = models['bigger'][0][1]
+print_ldamodel_topic_words(model_bg.topic_word_, vocab_bg, top_n=3)
+
+from tmtoolkit.topicmod.model_io import print_ldamodel_topic_words
+model_sm = models['smaller'][0][1]
+print_ldamodel_topic_words(model_sm.topic_word_, vocab_sm, top_n=5)
+
+topics = print_ldamodel_topic_words(model_sm.topic_word_, vocab_sm, top_n=5)
