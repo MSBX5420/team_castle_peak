@@ -43,5 +43,9 @@ Project Repository for MSBX5420 Team Castle Peak
 - Held check in meeting 4/27 @ 11:00 AM MST
 - Add link to blank presentation (PT) 4/27
 - Add Jupyter Notebook on Prod cluster 4/27
-- Last meeting for class presentaion @ 11:00 AM 4/28
+- Scheduled last meeting for class presentaion @ 11:00 AM 4/28
 - Finished persentation slides for data analysis 4/28
+- Held final team meeting to complete presentation 4/28
+- Code loaded to PROD EMR, data loaded to PROD S3 bucket (PT) 4/28
+- Parquet code ran successfully on PROD (PT) 4/28
+- Screenshots uploaded to https://github.com/MSBX5420/team_castle_peak/tree/master/screenshots directory (PT) 4/28
