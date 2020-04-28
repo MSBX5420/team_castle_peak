@@ -42,4 +42,6 @@ Project Repository for MSBX5420 Team Castle Peak
 - Run some file on the cluster to manipulate data in S3 bucket (ZZ) 4/27
 - Held check in meeting 4/27 @ 11:00 AM MST
 - Add link to blank presentation (PT) 4/27
-
+- Add Jupyter Notebook on Prod cluster 4/27
+- Last meeting for class presentaion @ 11:00 AM 4/28
+- Finished persentation slides for data analysis 4/28
