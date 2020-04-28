@@ -14,9 +14,9 @@ Project Repository for MSBX5420 Team Castle Peak
 - [Presentation Deck (View Only)](https://docs.google.com/presentation/d/1WwStrpsOf7392VhusVur28uPIXCDzI58TW1lG70Ul6I/edit?usp=sharing)
 
 ### Outstanding To Dos
-- Upload data/files to production cluster
-- Finish on-cluster python script to demo EMR <-> S3 communication
-- Put together presentation deck
+- Complete Presentation Deck
+- Upload deck to Github
+- Present
 
 ### Record Keeping
 - Initial email to establish communication sent 4/7/20 @ 2:30 PM (PT)
